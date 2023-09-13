@@ -83,8 +83,8 @@ author:
   name             : "Eric Weisbrod"
   avatar           : "profile.png"
   bio              : "Associate Professor of Accounting at the University of Kansas"
-  location         : "Lawrence, Kansas"
-  employer         : "University of Kansas"
+  location         : 
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Ou1Ym2MAAAAJ&hl=en"
   email            :
