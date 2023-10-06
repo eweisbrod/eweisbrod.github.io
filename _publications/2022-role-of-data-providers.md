@@ -6,7 +6,7 @@ excerpt: ''
 date: 2022-07-29
 venue: 'Journal of Accounting Research'
 paperurl: 'https://onlinelibrary.wiley.com/doi/10.1111/1475-679X.12457'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: ''
 ---
 Abstract:
 
