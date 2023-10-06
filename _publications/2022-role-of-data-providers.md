@@ -6,7 +6,6 @@ excerpt: ''
 date: 2022-07-29
 venue: 'Journal of Accounting Research'
 paperurl: 'https://onlinelibrary.wiley.com/doi/10.1111/1475-679X.12457'
-citation: ''
 ---
 Abstract:
 
