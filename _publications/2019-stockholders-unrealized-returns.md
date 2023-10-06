@@ -6,7 +6,7 @@ excerpt: ''
 date: 2019-04-01
 venue: 'Journal of Finance'
 paperurl: 'https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12743'
-citation: ''
+
 ---
 Abstract:
 
