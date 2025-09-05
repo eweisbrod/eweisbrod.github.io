@@ -14,4 +14,4 @@ redirect_from:
 If the embedded PDF below does not load, you can <u><a href="https://www.overleaf.com/project/5b5a5ddf600ca67d88174db7/detached">download it here.</a></u>
 <br/>
 
-<embed src="https://www.overleaf.com/project/5b5a5ddf600ca67d88174db7/detached" width="100%" />
+<embed src="https://www.overleaf.com/project/5b5a5ddf600ca67d88174db7/detached" style="width:500px; height: 300px;" />
