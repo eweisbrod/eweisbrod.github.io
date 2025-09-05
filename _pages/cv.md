@@ -14,4 +14,4 @@ redirect_from:
 If the embedded PDF below does not load, you can <u><a href="https://business.ku.edu/sites/business/files/attached-files/EricWeisbrod-CV_August2023.pdf">download it here.</a></u>
 <br/>
 
-<embed src="https://business.ku.edu/sites/business/files/attached-files/EricWeisbrod-CV_August2023.pdf" type="application/pdf" width="100%" />
+<embed src="[https://www.overleaf.com/download/project/5b5a5ddf600ca67d88174db7/build/1991a2c6d49-88de90c6e2a26ed1/output/output.pdf?compileGroup=priority&clsiserverid=clsi-reg-c2d-b-f-s05c&enable_pdf_caching=true&popupDownload=true]" type="application/pdf" width="100%" />
