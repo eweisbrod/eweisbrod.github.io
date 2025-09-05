@@ -19,8 +19,6 @@ A trading strategy that is long (short) firms for which k-NN* predicts positive 
 that exceed those earned by similar trading strategies that are based on alternate forecasts. The k-NN* algorithm generates an empirically reliable
 ex ante indicator of forecast accuracy that identifies situations when the k-NN* EAC is larger and the k-NN* trading strategy is more profitable.
 
-[Download paper here](https://doi.org/10.2308/TAR-2021-0478)
-
 Recommended citation: 
 
 Peter D. Easton, Martin M. Kapons, Steven J. Monahan, Harm H. Schütt, Eric H. Weisbrod; 
