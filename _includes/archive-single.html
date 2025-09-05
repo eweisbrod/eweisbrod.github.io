@@ -45,26 +45,39 @@
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-    
-{% assign blurb =
-  post.excerpt
-  | default: post.data.excerpt
-  | default: post.abstract
-  | default: post.data.abstract
-  | default: post.description
-  | default: post.data.description
-%}
+{%- comment -%}
+Robust excerpt resolver:
+- post.excerpt            → Jekyll auto excerpt (from body)
+- post['excerpt']         → front-matter excerpt
+- post.abstract           → front-matter abstract (if you use it)
+- post['description']     → another common blurb key
+- post.content            → fallback to first words of the page content
+{%- endcomment -%}
 
-{% if blurb %}
-  {% if site.read_more != 'enabled' %}
+{%- assign blurb = post.excerpt -%}
+{%- if blurb == nil or blurb == "" -%}
+  {%- assign blurb = post['excerpt'] -%}
+{%- endif -%}
+{%- if blurb == nil or blurb == "" -%}
+  {%- assign blurb = post.abstract | default: post['abstract'] -%}
+{%- endif -%}
+{%- if blurb == nil or blurb == "" -%}
+  {%- assign blurb = post.description | default: post['description'] -%}
+{%- endif -%}
+{%- if blurb == nil or blurb == "" -%}
+  {%- assign blurb = post.content | strip_html | truncatewords: 40 -%}
+{%- endif -%}
+
+{%- if blurb and blurb != "" -%}
+  {%- if site.read_more != 'enabled' -%}
     <p class="archive__item-excerpt" itemprop="description">{{ blurb | markdownify }}</p>
-  {% else %}
+  {%- else -%}
     <p class="archive__item-excerpt" itemprop="description">
       {{ blurb | markdownify | remove: '<p>' | remove: '</p>' }}
       <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
     </p>
-  {% endif %}
-{% endif %}
+  {%- endif -%}
+{%- endif -%}
     
     {% if post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
@@ -73,6 +86,13 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
+
+    <!-- DEBUG (remove after testing) -->
+<pre>
+ex={{ post.excerpt | jsonify }}
+ex_fm={{ post['excerpt'] | jsonify }}
+</pre>
+
 
   </article>
 </div>
