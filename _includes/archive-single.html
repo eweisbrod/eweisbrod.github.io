@@ -65,17 +65,14 @@ Robust excerpt resolver:
   {%- assign blurb = post.description | default: post['description'] -%}
 {%- endif -%}
 {%- if blurb == nil or blurb == "" -%}
-  {%- assign blurb = post.content | strip_html | truncatewords: 40 -%}
+  {%- assign blurb = post.content -%}
 {%- endif -%}
 
 {%- if blurb and blurb != "" -%}
   {%- if site.read_more != 'enabled' -%}
     <p class="archive__item-excerpt" itemprop="description">{{ blurb | markdownify }}</p>
   {%- else -%}
-    <p class="archive__item-excerpt" itemprop="description">
-      {{ blurb | markdownify | remove: '<p>' | remove: '</p>' }}
-      <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
-    </p>
+    <p class="archive__item-excerpt" itemprop="description">{{ blurb | markdownify }}</p>
   {%- endif -%}
 {%- endif -%}
     
@@ -87,11 +84,6 @@ Robust excerpt resolver:
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
 
-    <!-- DEBUG (remove after testing) -->
-<pre>
-ex={{ post.excerpt | jsonify }}
-ex_fm={{ post['excerpt'] | jsonify }}
-</pre>
 
 
   </article>
