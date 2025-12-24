@@ -12,6 +12,8 @@ author_profile: true
 
 {% include base_path %}
 
+## Published Papers
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
@@ -32,5 +34,11 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+
+## Working Papers
+
+{% for post in site.working_papers reversed %}
+  {% include archive-single.html %}
+{% endfor %}
 
 

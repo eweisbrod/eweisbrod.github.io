@@ -1,22 +1,40 @@
 var addressPoints = [
-  [
-    "Berkeley CA, USA",
-    37.8708393,
-    -122.2728638
-  ],
-  [
-    "London, UK",
-    51.5073219,
-    -0.1276473
-  ],
-  [
-    "San Francisco, California",
-    37.7792808,
-    -122.4192362
-  ],
-  [
-    "Los Angeles, CA",
-    34.0543942,
-    -118.2439408
-  ]
+  ["San Francisco, California", 37.7749, -122.4194],
+  ["Tempe, Arizona (4 talks)", 33.4255, -111.94],
+  ["Columbia, Missouri", 38.9517, -92.3341],
+  ["Tucson, Arizona", 32.2226, -110.9747],
+  ["Dallas, Texas (5 talks)", 32.7767, -96.797],
+  ["London, United Kingdom", 51.5074, -0.1278],
+  ["Coral Gables, Florida (3 talks)", 25.7617, -80.1918],
+  ["Singapore (2 talks)", 1.3521, 103.8198],
+  ["Atlanta, Georgia (2 talks)", 33.749, -84.388],
+  ["New York, New York (3 talks)", 40.7128, -74.006],
+  ["Miami, Florida", 25.7617, -80.1918],
+  ["San Diego, California", 32.7157, -117.1611],
+  ["Washington, DC (6 talks)", 38.9072, -77.0369],
+  ["Glasgow, Scotland", 55.8642, -4.2518],
+  ["Boston, Massachusetts", 42.3601, -71.0589],
+  ["Gainesville, Florida (2 talks)", 29.6516, -82.3248],
+  ["Chicago, Illinois", 41.8781, -87.6298],
+  ["Boulder, Colorado", 40.015, -105.2705],
+  ["Houston, Texas (2 talks)", 29.7604, -95.3698],
+  ["Orlando, Florida", 28.5383, -81.3792],
+  ["College Park, Maryland", 38.9807, -76.937],
+  ["South Bend, Indiana", 41.6764, -86.252],
+  ["University Park, Pennsylvania", 40.7982, -77.8599],
+  ["National Harbor, Maryland", 38.7829, -77.0174],
+  ["Rotterdam, Netherlands", 51.9225, 4.4792],
+  ["Seattle, Washington", 47.6062, -122.3321],
+  ["Honolulu, Hawaii (3 talks)", 21.3099, -157.8581],
+  ["Riverside, California", 33.9806, -117.3755],
+  ["St. Louis, Missouri", 38.627, -90.1994],
+  ["Hanover, New Hampshire", 43.7022, -72.2896],
+  ["Lawrence, Kansas", 38.9717, -95.2353],
+  ["Salt Lake City, Utah", 40.7608, -111.891],
+  ["Nashville, Tennessee", 36.1627, -86.7816],
+  ["Phoenix, Arizona", 33.4484, -112.074],
+  ["Manhattan, Kansas", 39.1836, -96.5717],
+  ["Denver, Colorado (2 talks)", 39.7392, -104.9903],
+  ["Long Beach, California", 33.7701, -118.1937],
+  ["Bentonville, Arkansas", 36.3729, -94.2088],
 ];
