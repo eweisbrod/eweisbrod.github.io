@@ -19,4 +19,4 @@ Download the latest version of my CV <u><a href="https://eweisbrod.github.io/Eri
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
     </iframe>
 </div>
-<p><a href="https://eweisbrod.github.io/EricWeisbrodCV/main.pdf" download>Download CV</a></p>
+
